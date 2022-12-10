@@ -1,0 +1,30 @@
+<!-- 
+    https://developers.google.com/maps/get-started
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.link = "https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q="
+    </script>
+</head>
+
+<body>
+    <iframe id="map" width="600" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY
+      &q=Los+Angeles+Convention+Center">
+  </iframe>
+    <form action="javascript:void(0)">
+        <label for="change-place">Type address:</label>
+        <input id="change-place" type="text">
+        <button type="submit" onclick="document.getElementById('map').src=window.link+document.getElementById('change-place').value">Search</button>
+
+    </form>
+</body>
+
+</html>
