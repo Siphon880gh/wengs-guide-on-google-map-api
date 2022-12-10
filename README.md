@@ -32,7 +32,9 @@ Get access to API documentations from clicking LEARN at top right. Then a learni
 You must create an access key, even for embed map, because they track uses and charge you. As of fall 2022, you get free $200 credit every month (if starting out, there's a trial vs $200 used up) and if your rate passes that then you get charged. You click Credentials on the left -> Then create an API key. By default, an API key tracks and allows access to all API services; you should in practice Edit API and restrict its scope to your specific API.
 
 
-### Method 1 - Embed: Look at URL which has address/place url query and access key url param
+### Method 1 - Embed API
+
+Look at URL which has address/place url query and access key url param
 ```
 <!-- 
     https://developers.google.com/maps/get-started
